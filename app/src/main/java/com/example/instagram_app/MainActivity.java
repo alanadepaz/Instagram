@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView ivPostImage;
     private Button btnSubmit;
     private Button btnLogout;
+    private Button btnToFeed;
     private File photoFile;
     public String photoFileName = "photo.jpg";
 
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         ivPostImage = findViewById(R.id.ivPostImage);
         btnSubmit = findViewById(R.id.btnSubmit);
         btnLogout = findViewById(R.id.btnLogout);
+        btnToFeed = findViewById(R.id.btnToFeed);
 
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
                 launchCamera();
             }
         });
+
         //queryPosts();
+
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,6 +106,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(TAG, "onClick logout button");
                 logoutUser();
+            }
+        });
+
+        btnToFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG, "onClick button to go to feed");
+                goFeedActivity();
             }
         });
     }
@@ -187,6 +199,11 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
         finish();   // Finishing main activity once we've done the navigation
+    }
+
+    private void goFeedActivity() {
+        Intent i = new Intent(this, FeedActivity.class);
+        startActivity(i);
     }
 
 
