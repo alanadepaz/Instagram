@@ -30,7 +30,8 @@
         android:text="Take Picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/etDescription"
+        android:backgroundTint="@color/dark_pink"/>
 
     <ImageView
         android:id="@+id/ivPostImage"
@@ -51,7 +52,8 @@
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPostImage" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPostImage"
+        android:backgroundTint="@color/dark_pink"/>
 
     <Button
         android:id="@+id/btnToFeed"
@@ -61,7 +63,8 @@
         android:layout_marginBottom="10dp"
         android:text="Go To Feed"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnLogout" />
+        app:layout_constraintEnd_toStartOf="@+id/btnLogout"
+        android:backgroundTint="@color/dark_pink"/>
 
     <Button
         android:id="@+id/btnLogout"
@@ -71,5 +74,6 @@
         android:layout_marginBottom="10dp"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/dark_pink"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
