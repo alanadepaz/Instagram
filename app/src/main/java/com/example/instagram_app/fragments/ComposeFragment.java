@@ -24,20 +24,15 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.instagram_app.FeedActivity;
 import com.example.instagram_app.LoginActivity;
-import com.example.instagram_app.MainActivity;
 import com.example.instagram_app.Post;
 import com.example.instagram_app.R;
-import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 import java.io.File;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -209,11 +204,6 @@ public class ComposeFragment extends Fragment {
         Intent i = new Intent(getContext(), LoginActivity.class);
         startActivity(i);
         getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();   // Finishing main activity once we've done the navigation
-    }
-
-    private void goFeedActivity() {
-        Intent i = new Intent(getContext(), FeedActivity.class);
-        startActivity(i);
     }
 
 }
