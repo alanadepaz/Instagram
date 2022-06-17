@@ -2,14 +2,14 @@
 
 **Instagram** is a photo sharing app using Parse as its backend.
 
-Time spent: **19** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
 - [x] User sees app icon in home screen.
-- [ ] User can sign up to create a new account using Parse authentication
+- [x] User can sign up to create a new account using Parse authentication
 - [x] User can log in to their account
 - [x] The current signed in user is persisted across app restarts
 - [x] User can log out of their account
@@ -67,7 +67,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Alana Depaz]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
