@@ -65,6 +65,13 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 Describe any challenges encountered while building the app.
 
+- INSTALL_FAILED_INSUFFICIENT_STORAGE error -> I had to delete my emulator and create a new one each time this occurred.
+- androidx.constraintlayout.widget.ConstraintLayout cannot be cast to android.widget.ImageView -> I was confused since I had no ID for my constraint layout so I was confused as to how I was casting it to a ImageView. However, I simply gave my constraint layout an ID and this seemed to fix the problem. 
+- Unable to access Github repository and push “fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.” -> Removed the “usekeychain yes” in my .ssh config file. I also realized that I had to rebase to the remote origin main because I added a ReadMe file manually from the GitHub UI. I needed to rebase to that commit so I could properly merge because the commit points become in sync again.
+- Figuring out how to navigate from a post to an activity with more details using a click -> Needed to add a setOnClickListener to the itemView in the ViewHolder.
+- When working on the refresh feature, refreshing would not stop and would add posts again each time I refreshed. -> Forgot to clear out the RecyclerView adapter before adding all the posts back. I also had to add swipeContainer.setRefreshing(false) in order to indicate that the refresh has completed.
+- Learning about styling was a challenge but I figured out how to use background images and nice icons.
+
 ## License
 
     Copyright [2022] [Alana Depaz]
